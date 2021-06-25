@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { PageStatusService } from './page-status.service';
 
 @Component({
   selector: 'app-page-status',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageStatusComponent implements OnInit {
 
-  constructor() { }
+  content;
+
+  constructor(private pageStatusService: PageStatusService) { }
 
   ngOnInit(): void {
+
+    this.content = this.pageStatusService.getStatus();
+    
   }
 
 }
