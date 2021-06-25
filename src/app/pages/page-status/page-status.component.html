@@ -1,4 +1,22 @@
-<div class="container">
-   <h1>{{ content.title }}</h1>
-   <h2>{{ content.subtitle }}</h2>
+<div class="container box-status">
+   <h1>{{ content?.title }}</h1>
+   <h2>{{ content?.subtitle }}</h2>
+
+   <ng-container *ngIf="content?.btnNavigate">
+
+      <button 
+      (click)="teste()" 
+      class="button button--page"
+      >{{content?.btnNavigate}}</button>
+
+   </ng-container>
+
+   <ng-container *ngIf="content?.btnTenteNovamente">
+      <button 
+      (click)="tenteNovamente()" 
+      class="button button--page"
+      >{{content?.btnTenteNovamente}}</button>
+   </ng-container>
+
+   
 </div>

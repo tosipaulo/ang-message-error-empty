@@ -20,7 +20,9 @@ export class PageUmComponent implements OnInit {
   navitageStatus(type) {
     this.pageStatusService.setStatus({
       title: `title ${type}`,
-      subtitle: 'Sutitle lorem'
+      subtitle: 'Sutitle lorem',
+      btnNavigate: 'Ir para page',
+      btnNavigateCallback: () => this.router.navigate(['/page-dois'])
     });
 
     this.router.navigate([`/status/${type}`]);

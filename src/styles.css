@@ -17,6 +17,12 @@
     gap: 30px;
 }
 
+.box-status {
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .button {
     border: 0;
     padding: 15px;

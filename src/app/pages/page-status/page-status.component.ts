@@ -15,7 +15,14 @@ export class PageStatusComponent implements OnInit {
   ngOnInit(): void {
 
     this.content = this.pageStatusService.getStatus();
-    
+  }
+
+  teste() {
+    this.content.btnNavigateCallback();
+  }
+
+  tenteNovamente() {
+    this.content.btnTenteNovamenteCallback();
   }
 
 }
