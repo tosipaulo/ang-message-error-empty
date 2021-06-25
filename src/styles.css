@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container  {
+    width: 700px;
+    margin: auto;
+}
+
+.box-button {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.button {
+    padding: 15px;
+    min-width: 64px;
+    height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button--page {
+    background-color: darkslateblue;
+}
+
+.button--error {
+    background-color:brown;
+}
+
+.button--success {
+    background-color: lightseagreen;
+}

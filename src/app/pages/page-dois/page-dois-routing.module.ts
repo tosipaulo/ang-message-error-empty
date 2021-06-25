@@ -1,5 +1,5 @@
 import { PageDoisComponent } from './page-dois.component';
-;import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 

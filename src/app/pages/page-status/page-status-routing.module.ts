@@ -1,12 +1,12 @@
+import { PageStatusComponent } from './page-status.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PageUmComponent } from './page-um.component';
 
 
 const routes: Routes = [
   {
-    path: '',
-    component: PageUmComponent
+    path: ':type',
+    component: PageStatusComponent
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PageUmRoutingModule { }
+export class PageStatusRoutingModule { }
