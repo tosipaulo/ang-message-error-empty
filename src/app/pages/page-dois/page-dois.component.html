@@ -1,7 +1,7 @@
 <div class="container box">
     <h1>Page Dois</h1>
     <div class="box-button">
-        <a routerLink="/status/sucesso" routerLink="/page-um" class="button button--success">fluxo sucesso</a>
-        <a routerLink="/status/erro" routerLink="/page-dois" class="button button--error">fluxo erro</a>
+        <button (click)="navitageStatus('success')" class="button button--success">fluxo sucesso</button>
+        <button (click)="navitageStatus('error')" class="button button--error">fluxo erro</button>
     </div>
 </div>
